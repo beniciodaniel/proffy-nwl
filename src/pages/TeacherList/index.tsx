@@ -1,18 +1,16 @@
-import React from "react";
-import PageHeader from "../../components/PageHeader";
+import React from 'react';
+import PageHeader from '../../components/PageHeader';
 
-import "./styles.css";
-import TeacherItem from "../../components/TeacherItem";
+import './styles.css';
+import TeacherItem from '../../components/TeacherItem';
+import Input from '../../components/Input';
 
 function TeacherList() {
   return (
     <div id="page-teacher-list" className="container">
       <PageHeader title="Estes são os proffys disponíveis">
         <form id="search-teachers">
-          <div className="input-block">
-            <label htmlFor="subject">Matéria</label>
-            <input type="text" id="subject" />
-          </div>
+          <Input label="Matéria" name="subject" />
 
           <div className="input-block">
             <label htmlFor="week_day">Dia da semana</label>
